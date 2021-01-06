@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <title> Documentazione </title>
+        <meta charset="UTF-8" />
+        <link rel="icon" href="https://cdn.discordapp.com/attachments/717452205908820078/796101013315649556/unknown.png" />
+    </head>
+    <body style="background-color: black; color: white; font-size: 32px;">
+        <h1 style="color: red; text-align: center; font-size: 55px;"> Documentazione Libreria GestioneFile </h1>
+        <p> Creare un Oggetto della libreria in scrittura: <code> GestioneFile oggetto = new GestioneFile("path", 'w'); </code> </p>
+        <p> Creare un Oggetto della libreria in append: <code> GestioneFile oggetto = new GestioneFile("path", 'a'); </code> </p>
+        <p> Creare un Oggetto della libreria in lettura: <code> GestioneFile oggetto = new GestioneFile("path", 'r'); </code> </p>
+        <table>
+            <tr style="color: red"> <td> Nome API</td> <td> ---Descrizione </td> </tr>
+            <tr> <td> Scrivi </td> <td> ---apre il file in modalità scrittura,  vuole passato come parametro il testo</td> </tr>
+            <tr> <td> Leggi </td> <td> ---Legge una riga alla volta e restituisce una stringa </td> </tr>
+            <tr> <td> LeggiStampa </td> <td> ---legge l'intero file e lo stampa</td> </tr>
+            <tr> <td> chiudi </td> <td> ---chiude il file </td> </tr>
+        </table>
+        <p> esempi:</p>
+        <code> oggetto.Scrivi("ciao mondo"); </code> 
+        <br>
+        <code> var = oggetto.Leggi(); </code>
+        <br>
+        <code> oggetto.LeggiTutto(); </code>
+        <br>
+        <code> oggetto.chiudi(); </code>
+
+        <p style="color: red; font-size: 40px;">  Includere libreria in Eclipse</p>
+        <p>1) fai tasto destro sulla parte sinistra del progetto eclipse  <br>
+        2) clicca su Build Path e poi su Configure Build Path... <br>
+        3)poi clicca su Libraries<br>
+        4)clicca su Classpath e add External Jars... <br>
+        5) cerca e selezione il file GestioneFile.jar <br>
+        6) ricordati di farlo ogni volta per ogni progetto </p>
+    </body>
+</html>
